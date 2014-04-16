@@ -6,11 +6,14 @@
 <body>
   <h1>Todo list</h1>
 
-  <ol>
-    <li></li>
-    <li></li>
-    <li></li>
-  </ol>
+  
+  	<ul>
+  <% @todos.each do |task| %>
+    <li><%= task %></li>
+  <% end %>
+</ul>
+
+ 
 
 </body>
 </html>

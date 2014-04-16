@@ -7,32 +7,16 @@
   <h1>Event schedule</h1>
 
   <table>
-    <tr>
-      <td>8pm</td>
-      <td>Doors open</td>
-    </tr>
-    <tr>
-      <td>8:30pm</td>
-      <td>Champagne and canapes served</td>
-    </tr>
-    <tr>
-    	<td>9pm</td>
-    	<td>Speech</td>
-    </tr>
-    <tr>
-    	<td>9:30pm</td>
-    	<td>Painting unveiled</td>
-    </tr>
-    <tr>
-    	<td>9:40pm</td>
-    	<td>Live band plays</td>
-    </tr>
-  </table>
+  	<%@schedule.each do |task| %>
+  	<tr>
+  		<td><%= task [0] %></td>
+  		<td><%= task [1] %></td>
 
      
      
 
     </tr>
+    <% end %>
     <!-- etc. etc. -->
   </table>
 
